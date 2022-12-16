@@ -1,0 +1,236 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: #f1f5f8;
+  color: #102a42;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.loginContainer{
+	@media screen and (min-width: 500px) {
+  .section {
+    width: 50%;
+  }
+}
+}
+
+.form {
+    background: white;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+}
+  @media screen and (min-width: 1000px) {
+    .form {
+      max-width: 500px;
+      margin-top: 200px;
+}
+}
+.form input {
+  background:   #f1f5f8;
+  border-color: transparent;
+  border-radius: 5px;
+  padding: 0.25rem 0.5rem;
+  margin-top: 4px;
+}
+.form-control {
+  margin: 0.5rem 0;
+  display: grid;
+  align-items: center;
+}
+.submit-btn {
+  display: inline-block;
+  background: #a5d5f8;
+  color: white;
+  border-color: transparent;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  padding: 5px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  align-items: center;
+  font-weight: bold;
+  transition: all 0.3s linear;
+}
+
+.submit-btn:hover{
+  background:   #49a6e9;
+  color: white;
+}
+
+.title{
+  text-align: center;
+}
+.danger{
+  color: red;
+}
+
+.success{
+  color: #155724;
+}
+
+.center{
+  text-align: center;
+}
+
+.emp-grid {
+  margin-bottom: 0;
+  color:  #102a42;
+  letter-spacing: 2px;
+  transition: all 0.3s linear;
+}
+
+.edit-btn,
+.delete-btn {
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 0.7rem;
+  margin: 0 0.15rem;
+  padding: 1px;
+  transition: all 0.3s linear;
+}
+.edit-btn {
+  color:  #6be675;
+}
+.edit-btn:hover {
+  color: #25bb32;
+}
+.delete-btn {
+  color:  #e66b6b;
+}
+.delete-btn:hover {
+  color: #e00000;
+}
+
+.edit-delete-btn-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.edit-delete-btn-container:hover{
+  background: #f1f5f8;
+}
+
+.dashboardContainer, .addemployeecontainer, .emplistcontainer{
+  display: flex;
+
+}
+
+.dashboardContent, .addemployee, .emplist{
+  flex-grow: 1;
+
+}
+
+.dashboardSidebar{
+  top: 0;
+  position: sticky;
+  width: 20%;
+  background: #2D3435;
+  height: 100vh;
+  color: #bee0ec;
+  font-size: 20px;
+  
+}
+
+ul{
+  margin-top: 40px;
+}
+li{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  padding-left: 20px;
+  gap: 10px;
+}
+a{
+  text-decoration: none;
+  color: #bee0ec;
+}
+a:hover{
+  color: black;
+}
+
+.catagory:hover{
+  background : lightskyblue;
+  color: black;
+  transition: all 0.5s;
+}
+
+.chartContainer{
+  display: flex;
+  align-items: center;
+}
+.topEmp{
+  background: white;
+  
+}
+
+.top-emp-container{
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  margin-top: 15px;
+}
+
+.emp {
+  background: #fff;
+  margin-bottom: 20px;
+  box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s linear;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border-radius: 5px;
+}
+
+.emp:hover{
+  box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.emp img {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.emp-footer{
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
+.menu{
+  position: relative;
+  float: right;
+  display: flex;
+  padding: 20px;
+  cursor: pointer;
+}
+.menu:hover{
+  color: white;
+}
+
+.searchInputBox{
+  margin-top: 20px;
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  padding-left: 10px;
+}
